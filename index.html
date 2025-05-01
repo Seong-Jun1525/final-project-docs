@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 여기어때 잘난체 */
+      @font-face {
+        font-family: "yg-jalnan";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 학교안심 둥근미소 */
+      @font-face {
+        font-family: "HakgyoansimDunggeunmisoTTF-B";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
+      /* 평창평화체 */
+      @font-face {
+        font-family: "PyeongChangPeace-Bold";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
+      /* 제주돌담체 */
+      @font-face {
+        font-family: "EF_jejudoldam";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 온글잎 의연체 */
+      @font-face {
+        font-family: "Uiyeun";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 낭만있구미체 */
+      @font-face {
+        font-family: "GumiRomanceTTF";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/GumiRomanceTTF.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 여기어때 잘난체 고딕 */
+      @font-face {
+        font-family: "JalnanGothic";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 엄마까투리체 */
+      @font-face {
+        font-family: "Katuri";
+        src: url("https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* KCC간판체 */
+      @font-face {
+        font-family: "KCC-Ganpan";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* 프리텐다드 */
+      @font-face {
+        font-family: "Pretendard-Regular";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* 수트 */
+      @font-face {
+        font-family: "SUIT-Regular";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 고운돋움 */
+      @font-face {
+        font-family: "GowunDodum-Regular";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 서울남산체 */
+      @font-face {
+        font-family: "SeoulNamsanM";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 엘리스 디지털코딩체 */
+      @font-face {
+        font-family: "EliceDigitalBaeum_Bold";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
+      /* D2Coding */
+      @font-face {
+        font-family: "D2Coding";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 프리젠테이션 */
+      @font-face {
+        font-family: "Freesentation-9Black";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2") format("woff2");
+        font-weight: 900;
+        font-style: normal;
+      }
+      body {
+        /* font-family: "Pretendard-Regular"; */
+        /* font-family: "SUIT-Regular"; */
+        /* font-family: "GowunDodum-Regular"; */
+        /* font-family: "SeoulNamsanM"; */
+        /* font-family: "EliceDigitalBaeum_Bold"; */
+        /* font-family: "D2Coding"; */
+        font-family: "Freesentation-9Black";
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        /* font-family: "yg-jalnan"; */
+        /* font-family: "HakgyoansimDunggeunmisoTTF-B"; */
+        /* font-family: "PyeongChangPeace-Bold"; */
+        /* font-family: "EF_jejudoldam"; */
+        /* font-family: "Uiyeun"; */
+        /* font-family: "GumiRomanceTTF"; */
+        /* font-family: "JalnanGothic"; */
+        font-family: "Katuri";
+        /* font-family: "KCC-Ganpan"; */
+        color: #5500ff;
+      }
+      /*
+#5500ff
+
+#864df7
+
+#b996ff
+      */
+    </style>
+  </head>
+  <body>
+    <h1>여행다섯시</h1>
+
+    <hr />
+    <h1>숙소 이용 정보</h1>
+
+    <section>
+      <h2>일회용품 줄이기 함께 실천해요</h2>
+      <p>
+        자원재활용법에 따라 <strong>2024년 3월 29일부터</strong> 일부 숙소에서는 일회용 어메니티가 무료로 제공되지 않아요.<br />
+        일회용 어메니티 별도 구매는 숙소에 문의해주세요.
+      </p>
+    </section>
+
+    <section>
+      <h2>기본 정보</h2>
+      <ul>
+        <li><strong>입실</strong>: 15:00 | <strong>퇴실</strong>: 11:00</li>
+        <li><strong>22시 이후 입실 시</strong> 사전문의 (필수)</li>
+        <li>무료 Wi-Fi</li>
+        <li>전 객실 금연</li>
+        <li>주차 가능</li>
+        <li><strong>캠핑데크 입실시간</strong>: 입실 13:00 | 퇴실 11:00</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>객실 정보</h2>
+      <ul>
+        <li><strong>원룸형 객실</strong>: 월풀스파 구비 (현장문의)</li>
+        <li><strong>캠핑데크</strong>: 공용 샤워실, 화장실, 개수대 구비</li>
+        <li>
+          <strong>캠핑데크 사이즈</strong>:
+          <ul>
+            <li>캠핑데크S: 6m × 5m</li>
+            <li>캠핑데크V: 6m × 4m</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>인원 추가 정보</h2>
+      <ul>
+        <li>1인 20,000원 (영유아 포함)</li>
+        <li>영유아 인원수 포함 / 최대인원 초과불가</li>
+        <li>예약 시 결제 또는 현장결제 (채널에 따라 다를 수 있음)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>펜션 서비스</h2>
+      <ul>
+        <li>시설 이용문의 및 비용은 펜션에 별도 문의</li>
+        <li><strong>야외 수영장 (하절기 운영)</strong>: ~20:00 / 이용복장 제한 없음</li>
+        <li>
+          <strong>바비큐 시설</strong>:
+          <ul>
+            <li>숯+그릴 대여: 2인 기준 20,000원 (1인 추가 5,000원)</li>
+            <li>신청시간: 이용 30분~1시간 전</li>
+            <li>이용시간: ~22:00</li>
+            <li>개별 바비큐 가능</li>
+            <li>날씨에 따라 사용 불가할 수 있음 (비바람 심할 경우)</li>
+            <li>숯, 그릴 개인 지참 불가</li>
+            <li>현장 결제</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>취소 및 환불 규정</h2>
+      <ul>
+        <li>숙박일 기준 6일 전: 100% 환불</li>
+        <li>숙박일 기준 5일 전: 90% 환불</li>
+        <li>숙박일 기준 4일 전: 80% 환불</li>
+        <li>숙박일 기준 3일 전: 70% 환불</li>
+        <li>숙박일 기준 2일 전: 50% 환불</li>
+        <li>숙박일 기준 1일 전: 30% 환불</li>
+        <li>숙박 당일 및 NO-SHOW: 환불 불가</li>
+      </ul>
+      <p>취소, 환불 시 수수료가 발생할 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>확인사항 및 기타</h2>
+      <ul>
+        <li>객실과 추가옵션의 취소/환불 규정은 동일 (추가옵션만 취소 불가)</li>
+        <li>추가비용은 1박 기준 / 자세한 사항은 펜션에 문의</li>
+        <li>당일 예약 및 21시 이후 입실 시 업체 문의 필수</li>
+        <li>최대 인원 초과 시 입실 불가 (방문객 포함)</li>
+        <li>객실 내 육류, 튀김류, 생선류 조리 불가</li>
+        <li>애완동물 출입 불가</li>
+        <li>보호자 없는 미성년자 숙박 적발 시 퇴실 및 환불 불가</li>
+        <li>이미지는 실제와 다를 수 있음</li>
+        <li>객실 내 화약, 폭죽 등 화재위험물질 사용 금지 (화재 시 책임은 이용자에게 있음)</li>
+        <li>쓰레기는 지정된 장소에 분리배출</li>
+        <li>펜션 사정에 따라 내용 변경 가능</li>
+        <li>성수기 기간 동안 일부 객실 요금 변동 가능</li>
+        <li>수영장 운영은 날씨 및 펜션 상황에 따라 변동 가능</li>
+      </ul>
+    </section>
+  </body>
+</html>
