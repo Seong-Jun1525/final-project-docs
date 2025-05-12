@@ -2,27 +2,88 @@
 
 ## 숙박업소 CRUD
 
-| IDX           | 기능명             | 설명                    | Method | API Path             | Request Body / Params | Response Body        |
-| ------------- | ------------------ | ----------------------- | ------ | -------------------- | --------------------- | -------------------- |
-| Accommodation | 숙박업소 목록 조회 | 전체 숙박업소 목록 조회 | GET    | /accommodations      | accomListInfo         | List<AccomListDTO>   |
-|               | 숙박업소 등록      | 숙박업소 정보 등록      | POST   | /accommodations      | accomInfo             | 등록된 숙박업소 정보 |
-|               | 숙박업소 수정      | 숙박업소 정보 수정      | PUT    | /accommodations      | 수정 정보             | 수정된 숙박업소 정보 |
-|               | 숙박업소 삭제      | 숙박업소 정보 삭제      | DELETE | /accommodations      | 없음                  | 삭제 결과            |
-|               | 숙박업소 상세 조회 | 특정 숙박업소 상세 조회 | GET    | /accommodations/{id} | 없음                  | accomDetailDTO       |
+| IDX           | 기능명             | 설명                    | Method | API Path             | Request Body / Params                                  | Response Body                       |
+| ------------- | ------------------ | ----------------------- | ------ | -------------------- | ------------------------------------------------------ | ----------------------------------- |
+| Accommodation | 숙박업소 목록 조회 | 전체 숙박업소 목록 조회 | GET    | /accommodations      | [accomListInfo](#accomimginfo)                         | List<AccomListDTO>                  |
+|               | 숙박업소 등록      | 숙박업소 정보 등록      | POST   | /accommodations      | [accomInfo](#accomInfo), [accomImgInfo](#accomImgInfo) | 숙박업소 정보 및 숙박업소 사진 정보 |
+|               | 숙박업소 수정      | 숙박업소 정보 수정      | PUT    | /accommodations      | [updatedAccomInfo](#updatedaccominfo)                  | 수정된 숙박업소 정보                |
+|               | 숙박업소 삭제      | 숙박업소 정보 삭제      | DELETE | /accommodations      | accomNo                                                | 삭제 결과                           |
+|               | 숙박업소 상세 조회 | 특정 숙박업소 상세 조회 | GET    | /accommodations/{id} | 없음                                                   | accomDetailDTO                      |
 
 ### accomListInfo
 
 ```json
 accomListInfo {
-  "keyword": keyword,
-  "location": location,
-  "checkIn": checkIn,
-  "checkOut": checkOut,
-  "guests": guests,
-  "page": page,
-  "size": size
+  "keyword": "키워드",
+  "location": "지역명",
+  "checkIn": "체크인날짜",
+  "checkOut": "체크아웃날짜",
+  "guests": "인원수",
+  "page": 0, // 페이지 수
+  "size": 0 // 데이터 수
 }
 ```
+
+---
+
+### accomInfo
+
+```json
+accomInfo {
+  "accomName": "숙박업소명",
+  "accomDesc": "숙박업소설명",
+  "accomLat": 0, // 위도
+  "accomLon": 0, // 경도
+  "accomAddr": "주소",
+  "accomPhone": "01012345678",
+  "pubFacInfo": "공용편의시설정보",
+  "inRoomFacInfo": "객실내시설정보",
+  "etcFacInfo": "기타시설정보",
+  "accomTypeNo": 0 // 숙박유형번호
+}
+```
+
+### accomImgInfo
+
+```json
+accomImgInfo {
+  "accomImgOrgName": "이미지원본이름",
+  "accomImgChgName": "이미지경로명",
+  "accomNo": 0, // 숙박업소번호
+}
+```
+
+---
+
+### updatedAccomInfo
+
+```json
+updatedAccomInfo {
+  "accomNo": 0, // 숙박업소번호
+  "accomName": "숙박업소명",
+  "accomDesc": "숙박업소설명",
+  "accomLat": 0, // 위도
+  "accomLon": 0, // 경도
+  "accomAddr": "주소",
+  "accomPhone": "01012345678",
+  "pubFacInfo": "공용편의시설정보",
+  "inRoomFacInfo": "객실내시설정보",
+  "etcFacInfo": "기타시설정보",
+  "accomTypeNo": 0 // 숙박유형번호
+}
+```
+
+<!-- TODO -->
+
+## 객실 CRUD
+
+| IDX           | 기능명         | 설명                | Method | API Path | Request Body / Params | Response Body |
+| ------------- | -------------- | ------------------- | ------ | -------- | --------------------- | ------------- |
+| Accommodation | 객실 목록 조회 | 전체 객실 목록 조회 | GET    | /        |                       |               |
+|               | 객실 등록      | 객실 정보 등록      | POST   | /        |                       |               |
+|               | 객실 수정      | 객실 정보 수정      | PUT    | /        |                       |               |
+|               | 객실 삭제      | 객실 정보 삭제      | DELETE | /        | accomNo               | 삭제 결과     |
+|               | 객실 상세 조회 | 특정 객실 상세 조회 | GET    | //{id}   | 없음                  |               |
 
 ## 예약
 
