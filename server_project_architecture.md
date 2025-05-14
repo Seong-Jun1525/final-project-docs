@@ -139,8 +139,14 @@
     │   │                  ├── 📁exception
     │   │                  ├── 📁repository (DTO, DAO)
     │   │                  └── 📁service
-    │   └── 📁resources
-    │       ├── 📁mappers
-    │       ├── 📁properties
-    │       └── application.properties
+    │   ├── 📁resources
+    │   │    ├── 📁mappers
+    │   │    ├── 📁properties
+    │   │    ├── 📁static
+    │   │    │    └── 📁assets
+    │   │    │        └── 📁resources
+    │   │    │            └── 📁upload
+    │   │    │                ├── 📁acc
+    │   │    │                └── 📁review
+    │   │    └── application.properties
 ```
