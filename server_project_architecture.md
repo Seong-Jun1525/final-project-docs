@@ -93,43 +93,51 @@
     │   │               ├── 📁interceptor
     │   │               ├── 📁admin
     │   │               │   ├── 📁controller
-    │   │               │   ├── 📁domain
+    │   │               │   ├── 📁domain (Entity)
     │   │               │   ├── 📁exception
+    │   │               │   ├── 📁repository (DTO, DAO)
     │   │               │   └── 📁service
     │   │               ├── 📁member
     │   │               │   ├── 📁controller
-    │   │               │   ├── 📁domain
+    │   │               │   ├── 📁domain (Entity)
     │   │               │   ├── 📁exception
+    │   │               │   ├── 📁repository (DTO, DAO)
     │   │               │   └── 📁service
     │   │               ├── 📁accommodation
     │   │               │   ├── 📁controller
-    │   │               │   ├── 📁domain
+    │   │               │   ├── 📁domain (Entity)
     │   │               │   ├── 📁exception
+    │   │               │   ├── 📁repository (DTO, DAO)
     │   │               │   └── 📁service
     │   │               ├── 📁room
     │   │               │   ├── 📁controller
-    │   │               │   ├── 📁domain
+    │   │               │   ├── 📁domain (Entity)
     │   │               │   ├── 📁exception
+    │   │               │   ├── 📁repository (DTO, DAO)
     │   │               │   └── 📁service
     │   │               ├── 📁payment
     │   │               │   ├── 📁controller
-    │   │               │   ├── 📁domain
+    │   │               │   ├── 📁domain (Entity)
     │   │               │   ├── 📁exception
+    │   │               │   ├── 📁repository (DTO, DAO)
     │   │               │   └── 📁service
     │   │               ├── 📁review
     │   │               │   ├── 📁controller
-    │   │               │   ├── 📁domain
+    │   │               │   ├── 📁domain (Entity)
     │   │               │   ├── 📁exception
+    │   │               │   ├── 📁repository (DTO, DAO)
     │   │               │   └── 📁service
     │   │               ├── 📁daily
     │   │               │   ├── 📁controller
-    │   │               │   ├── 📁domain
+    │   │               │   ├── 📁domain (Entity)
     │   │               │   ├── 📁exception
+    │   │               │   ├── 📁repository (DTO, DAO)
     │   │               │   └── 📁service
     │   │               └── 📁chat
     │   │                  ├── 📁controller
-    │   │                  ├── 📁domain
+    │   │                  ├── 📁domain (Entity)
     │   │                  ├── 📁exception
+    │   │                  ├── 📁repository (DTO, DAO)
     │   │                  └── 📁service
     │   └── 📁resources
     │       ├── 📁mappers
