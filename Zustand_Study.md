@@ -14,7 +14,7 @@
 
 ![component](https://somwpkzlplaovldnfahk.supabase.co/storage/v1/object/public/heropy.dev_posts/n74Tgc/s1.png)
 
-- 공유할 데이터는 기본적으로 상위 <-> 하위 컴포넌트 간 데이터 전달이 가능하다. -> `props 방식`
+- 기본적으로 React는 상위컴포넌트에서 하위컴포넌트로 단방향 흐름이다. -> `props 방식`
 
 ![props](https://somwpkzlplaovldnfahk.supabase.co/storage/v1/object/public/heropy.dev_posts/n74Tgc/s2.png)
 
@@ -35,3 +35,16 @@ Prop Drilling을 해결하기 위해서 Store를 사용하여
 
 ![prop_drilling_solution](https://somwpkzlplaovldnfahk.supabase.co/storage/v1/object/public/heropy.dev_posts/n74Tgc/s5.png)
 ![prop_drilling_solution](https://somwpkzlplaovldnfahk.supabase.co/storage/v1/object/public/heropy.dev_posts/n74Tgc/s6.png)
+
+## Zustand의 패턴
+
+> Zustand의 패턴은 간소화된 Flux 패턴을 사용한다.
+>
+> ![Flux Pattern](https://velog.velcdn.com/images/jyooj08/post/fcb2a8c5-2d8f-4535-bf25-af39246c42d6/image.png)
+
+## 참고자료
+
+- [공식문서](https://zustand.docs.pmnd.rs/getting-started/introduction)
+- [HEROPY.DEV](https://www.heropy.dev/p/n74Tgc)
+- [jyooj08 - velog](https://velog.io/@jyooj08/Zustand-%ED%95%9C-%EB%B0%A9%EC%97%90-%EC%A0%95%EB%A6%AC)
+- [chairking-95 - tistory](https://chairking-95.tistory.com/175)
